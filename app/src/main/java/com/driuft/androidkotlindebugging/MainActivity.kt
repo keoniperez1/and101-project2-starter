@@ -1,6 +1,5 @@
 package com.driuft.androidkotlindebugging
 
-import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -30,7 +29,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun launchHelloWorldActivity() {
-        val i = Intent(404 as Context, HelloWorldActivity::class.java)
+        val i = Intent(this, HelloWorldActivity::class.java)
         startActivity(i)
     }
 
